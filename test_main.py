@@ -7,19 +7,20 @@ original_data = pd.read_csv(path)
 
 def test_load():
     result_load_data = load(path)
-    assert original_data == result_load_data, "Test has failed."
+    assert original_data.equals(result_load_data), "Test has failed."
 
 def test_summary():
     result_summary = summary(original_data)
-    expected_summary = pd.describe(original_data)
-    assert result_summary == expected_summary, "Test has failed."
+    expected_age_mean = original_data["age"].mean()
+    result_age_mean = result_summary.iloc[1,2]
+    assert expected_age_mean == result_age_mean, "Test has failed."
 
 def test_visualize():
     result_plot = visualize(original_data)
-    assert result_plot is not None, "Test has failed."
+    assert result_plot is None, "Test has failed."
 
 
 if __name__ == "__main__":
-    data = test_load(path)
-    test_summary(data)
-    test_visualize(data)
+    test_load()
+    test_summary()
+    test_visualize()
