@@ -12,7 +12,11 @@
 
 ## :ballot_box_with_check: Dataset
 `titanics.csv`
-  - This dataset contains a list of passengers aboard the Titanic in 1912, including information on those who survived and those who did not. There are 891 samples with 14 different variables. In this repository, we will visualize the age of passengers in different classes using box plots.
+  - This dataset contains a list of passengers aboard the Titanic in 1912, including information on those who survived and those who did not. There are 891 samples with 14 different variables. In this repository, we will visualize the age of passengers in different classes using box plots.</br>
   - [titanics.csv](https://github.com/suim-park/Mini-Project-9/raw/main/titanic.csv)
+
+## :ballot_box_with_check: Main progress
+#### Perform the data manipulation using a cloud-hosted notebook.
+
 
 [Google Colab](https://colab.research.google.com/drive/195osUytOXqXQv8XU6hvsPhv9KCw1FoL5?usp=sharing)
