@@ -10,13 +10,14 @@ def test_load():
     assert original_data.equals(result_load_data), "Test has failed."
 
 def test_summary():
-    result_summary = summary(original_data)
-    expected_age_mean = original_data["age"].mean()
+    data = load(path)
+    result_summary = summary(path)
+    expected_age_mean = data["age"].mean()
     result_age_mean = result_summary.iloc[1,2]
     assert expected_age_mean == result_age_mean, "Test has failed."
 
 def test_visualize():
-    result_plot = visualize(original_data)
+    result_plot = visualize(path)
     assert result_plot is None, "Test has failed."
 
 
