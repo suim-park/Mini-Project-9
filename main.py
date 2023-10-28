@@ -1,4 +1,4 @@
-from lib import load, summary, visualize
+from library import load, summary, visualize
 
 data_path = "titanic.csv"
 
