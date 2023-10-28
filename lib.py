@@ -25,7 +25,7 @@ def visualize(path):
     if not os.path.exists(save_folder):
         os.makedirs(save_folder)
 
-    boxplot = sns.boxplot(data=data, x="class", y="age", hue="alive")
+    boxplot = sns.boxplot(data=data, x="class", y="age", hue="alive", order=["First", "Second", "Third"])
 
     save_path = os.path.join(save_folder, f"boxplot class.png")
     plt.savefig(save_path)
