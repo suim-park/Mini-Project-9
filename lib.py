@@ -10,9 +10,10 @@ def load(path):
 # Summary the data
 def summary(data):
     data_summary = pd.describe(data)
+    print(data_summary)
     return data_summary
 
 # Visualize the data
 def visualize(data):
     boxplot = sns.boxplot(data=titanic, x="class", y="age", hue="alive")
-    return boxplot
+    plt.show()
