@@ -14,4 +14,5 @@ def summary(data):
 
 # Visualize the data
 def visualize(data):
-    d
+    boxplot = sns.boxplot(data=titanic, x="class", y="age", hue="alive")
+    return boxplot
